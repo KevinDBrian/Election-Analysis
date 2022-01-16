@@ -3,10 +3,11 @@ import csv
 import os
 
 # Assign a variable to load a file from a path.
-file_to_load = os.path.join("G:\Modules\Module_3\Election-Analysis\Resources\election_results.csv")
+# I needed to convert the path to a "raw string" and did this via the "r" before the path. Source: https://stackoverflow.com/questions/37400974/unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3-trunca
+file_to_load = os.path.join(r"C:\Users\Kevin\Election-Analysis\Resources\election_results.csv")
 
 # Assign a variable to save the file to a path.
-file_to_save = os.path.join("G:\Modules\Module_3\Election-Analysis\Analysis\election_analysis.txt")
+file_to_save = os.path.join(r"C:\Users\Kevin\Election-Analysis\Analysis\election_analysis.txt")
 
 # Initialize a total vote counter.
 total_votes = 0
